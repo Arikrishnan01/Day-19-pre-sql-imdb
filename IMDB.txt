@@ -1,0 +1,78 @@
+
+===>  Here I did created the one simple IMDB databse suing in MYSQL and get the
+ all data using in mysql query. 
+
+
+=> Table created:
+
+CREATE TABLE MOVIES (
+  Id INTEGER PRIMARY KEY,
+  Actor_Name TEXT NOT NULL,
+  Title TEXT NOT NULL,
+  Media TEXT NOT NULL,
+  Genre TEXT NOT NULL,
+  Review TEXT NOT NULL,
+  Skills TEXT NOT NULL,
+  Role TEXT NOT NULL
+);
+
+=> Insert inot the data in to table:
+
+INSERT INTO MOVIES VALUES (1,'Vikram','Sethu','Vedio','Love','Very Intresing','Real Acting','Hero and Rowdy');
+INSERT INTO MOVIES VALUES (2,'Prasnath','Majunu','Vedio','Love','Full Intresing','Good','Hero');
+INSERT INTO MOVIES VALUES (3,'Prasnath','Jodi','Vedio','Love and Comedy','It very nice movie','Very Good','Hero and Comedy');
+
+=> Fetch  the all data from existing data:
+
+SELECT * FROM MOVIES ;
+
+OUTPUT:
+
+
+Id	Actor_Name	Title	Media	Genre	            Review	            Skills	        Role
+
+1	Vikram	    Sethu	Vedio	Love	            Very Intresing	    Real Acting	    Hero and Rowdy
+2	Prasnath	Majunu	Vedio	Love	            Full Intresing	    Good	        Hero
+3	Prasnath	Jodi	Vedio	Love and Comedy	    It very nice movie	Very Good	    Hero and Comedy
+
+2. GENRE:
+
+SELECT Genre FROM MOVIES ;
+
+OUTPUT:
+
+Love
+Love
+Love and Comedy.
+
+3. REVIEW: 
+
+SELECT Review FROM MOVIES ;
+
+OUTPUT:
+
+Very Intresing
+Full Intresing
+It very nice movie.
+
+
+4. SKILLS:
+
+SELECT Skills FROM MOVIES ;
+
+OUTPUT:
+
+Real Acting
+Good
+Very Good.
+
+
+5. ROLE:
+
+SELECT Role FROM MOVIES ;
+
+OUTPUT:
+
+Hero and Rowdy
+Hero
+Hero and Comedy
